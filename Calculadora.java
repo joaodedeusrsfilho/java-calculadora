@@ -6,13 +6,13 @@ public class Calculadora {
     public static void main(String[] args) {
         Scanner lerTeclado = new Scanner(System.in);
         System.out.println("Digita um numero");
-        float numero1 = lerTeclado.nextInt();
+        double numero1 = lerTeclado.nextInt();
 
-        System.out.println("Qual operacao deseja fazer: ( + ), ( - ) , ( * ) , ( / ), ( % )");
+        System.out.println("Qual operação deseja fazer: ( + ), ( - ) , ( * ) , ( / ), ( % )");
         String operador = lerTeclado.next();
 
         System.out.println("Digite um numero");
-        float numero2 = lerTeclado.nextInt();
+        double numero2 = lerTeclado.nextInt();
 
         switch (operador){
             case "+":
@@ -24,8 +24,8 @@ public class Calculadora {
             case "*":
                 System.out.println("Resultado = "+(numero1 * numero2));break;
             case "%":
-                float result = (numero1 * numero2) / 100;
-                float resultFInal = result + numero1;
+                double result = (numero1 * numero2) / 100;
+                double resultFInal = result + numero1;
                 System.out.println("Valor inicial = "+numero1);
                 System.out.println("Valor com porcentagem = "+result);
                 System.out.println("Valor com porcentagem incluida = "+(resultFInal)); break;
